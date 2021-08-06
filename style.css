@@ -1,29 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&family=Satisfy&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 
 :root {
-    --dark : #DB2777;
-    --text : #F3F4F6;
-    --grey : #9CA3AF;
+    --dark: #DB2777;
+    --text: #F3F4F6;
+    --grey: #9CA3AF;
 }
 
-body{
+body {
     margin: 0;
-    background-color: var(--text);
+    background-image: linear-gradient(to right, var(--text), var(--grey));
 }
+
 p {
     font-size: 1.2rem;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
+
 .section {
     width: 100%;
     max-width: 500px;
     min-height: 200px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 2rem 1rem;
     text-align: center;
     background-color: var(--dark);
@@ -32,7 +36,7 @@ p {
     box-shadow: 5px 5px #9CA3AF;
 }
 
-.label{
+.label {
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
 }
@@ -50,48 +54,55 @@ button {
     border: none;
     font-size: 1rem;
     margin: 1rem auto;
-    background-color:var(--text);
+    background-color: var(--text);
     color: var(--dark);
     font-weight: bold;
     cursor: pointer;
 
 }
-.cashGiven{
+
+.cashGiven {
     display: none;
-}
-.returnChange{
-    display: none;
-}
-.errorMsg{
-    padding-top: 1rem;
-    color:white;
-}
-#output{
-    margin: 1rem 0;    
 }
 
-#output table, th, td{
+.returnChange {
+    display: none;
+}
+
+.errorMsg {
+    padding-top: 0.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+#output {
+    margin: 1rem 0;
+}
+
+#output table,
+th,
+td {
     font-size: 0.9rem;
     padding: 0.2rem;
     color: var(--dark);
-    background-color:var(--text);
-    border: 2px solid var(--grey) ;
+    background-color: var(--text);
+    border: 2px solid var(--grey);
     border-collapse: collapse;
     font-weight: bold;
 }
 
-.noOfNotes{
-    background-color:white;
+.noOfNotes {
+    background-color: white;
     font-weight: bold;
 }
 
-table{
+table {
     width: 100%;
     table-layout: fixed;
 }
 
-th,td{
+th,
+td {
     word-wrap: break-word;
 }
-
 

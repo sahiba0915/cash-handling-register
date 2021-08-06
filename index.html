@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Cash Handling Register</title>
 </head>
+
 <body>
+
     <section class="section">
         <h1>Cash Handling Register💵</h1>
         <p>Enter the bill amount and cash given and know the minimum notes to be refunded back. </p>
@@ -15,13 +18,13 @@
         <div>
             <div class="label">Bill Amount</div>
             <input type="number" id="billAmt">
-            <button id="nextBtn" >Next</button>
+            <button id="nextBtn">Next</button>
         </div>
-       <!-- Cash Given -->
+        <!-- Cash Given -->
         <div class="cashGiven">
             <div class="label">Cash Given</div>
             <input type="number" id="cashGiven">
-            <button id="checkBtn" >Check</button>
+            <button id="checkBtn">Check</button>
         </div>
         <!-- Error msg -->
         <div class="errorMsg"></div>
@@ -29,9 +32,9 @@
         <!--Return change  -->
         <div class="returnChange">
             <div class="label">Return Change:</div>
-                <div id="output">
-                    <table>
-                        <tr>
+            <div id="output">
+                <table>
+                    <tr>
                         <th>No.of Notes</td>
                         <td class="noOfNotes"></td>
                         <td class="noOfNotes"></td>
@@ -40,8 +43,8 @@
                         <td class="noOfNotes"></td>
                         <td class="noOfNotes"></td>
                         <td class="noOfNotes"></td>
-                        </tr>
-                        <tr>
+                    </tr>
+                    <tr>
                         <th>Note</td>
                         <td>2000</td>
                         <td>500</td>
@@ -50,11 +53,14 @@
                         <td>10</td>
                         <td>5</td>
                         <td>1</td>
-                        </tr>
-                    </table>
-                </div>
+                    </tr>
+                </table>
+            </div>
         </div>
 
     </section>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
